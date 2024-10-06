@@ -1,0 +1,34 @@
+body{
+    background-color: burlywood;
+}
+
+.card {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the image */
+    align-items: center;      /* Vertically centers the image */
+    height: 100vh;            /* Full height of the viewport, or set this to the desired height */
+  }
+  
+  .card img {
+    max-width: 80%;          /* Ensures the image stays responsive */
+    max-height: 80%;         /* Prevents the image from overflowing the container */
+  }
+  
+  .btn {
+    padding: 10px 20px;      /* Adds some padding for a nicer button look */
+    margin-right: 10px;      /* Adds space between the buttons */
+    cursor: pointer;         /* Changes the cursor to a pointer */
+    border: none;            /* Removes the default button border */
+    color: white;            /* Sets text color to white */
+    border-radius: 5px;      /* Adds rounded corners */
+    font-size: 16px;         /* Increases font size */
+  }
+  
+  .btn:nth-of-type(1) {
+    background-color: red;   /* Red background for the first button */
+  }
+  
+  .btn:nth-of-type(2) {
+    background-color: blue;  /* Blue background for the second button */
+  }
+  
