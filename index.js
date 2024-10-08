@@ -4,6 +4,7 @@ let money =50;
 
 let previousRandomNumber = null;
 
+
 function betUp(){
     var randomNumber= Math.floor(Math.random()*13)+1;
     var randomImageSource = "images/card"+randomNumber+".jpeg";
@@ -17,14 +18,15 @@ function betUp(){
         return;
     }
     money -=10;
+    
 
     if(randomNumber>previousRandomNumber){
        money+=20;
-       document.querySelector("h2.score").innerHTML = `You won our money :<span style="color: green;"> $${money}</span></>`;
+       document.querySelector("h2.score").innerHTML = `You won! your money :<span style="color: green;"> $${money}</span></>`;
     }else if(randomNumber<previousRandomNumber){
-        document.querySelector("h2.score").innerHTML = `You loose! Your money :<span style="color: red;"> $${money}</span>`;
+        document.querySelector("h2.score").innerHTML = `You loose! your money :<span style="color: red;"> $${money}</span>`;
     }else{
-        document.querySelector("h2.score").innerHTML = ` Draw Your money :<span style="color: grey;"> $${money}</span>`;
+        document.querySelector("h2.score").innerHTML = ` Draw your money :<span style="color: grey;"> $${money}</span>`;
     }
 
     previousRandomNumber =randomNumber;
